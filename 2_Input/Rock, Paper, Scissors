@@ -1,0 +1,63 @@
+# from random import randint
+
+# player = input('rock (r), paper(p), or scissors(s)')
+# print(player, 'vs')
+# chosen = randint(1,3)
+# # print(chosen)
+
+# if (chosen == 1):
+#   computer = "r"
+# elif (chosen ==2):
+#   computer = "p"
+# else:
+#   computer = "s"
+  
+# # print(computer)
+  
+# if player == computer:
+#     print('DRAW')
+# elif player == 'r' and computer == 's':
+#     print('Player wins!')
+# elif player == 'r' and computer == 'p':
+#     print('Computer wins!')
+# elif player == 'p' and computer == 'r':
+#     print('Player wins!')
+# elif player == 'p' and computer == 's':
+#     print('Computer wins!')
+# elif player == 's' and computer == 'p':
+#     print('Player wins!')
+# elif player == 's' and computer == 'r':
+#     print('Computer wins!')
+# else:
+#     print("Invalid input! Please enter 'r', 'p', or 's'.")
+
+from random import randint
+
+player = input("rock (O), paper (____), scissors (>8)")
+print('You collect:', player)
+com_ran = randint(1,3)
+if (com_ran == 1):
+  computer = "O"
+elif (com_ran == 2):
+  computer = "____"
+else:
+  computer = ">8"
+
+print("Computer collect:",computer)
+
+if player == computer:
+    print('DRAW')
+elif player == 'O' and computer == '>8':
+    print('Player wins!')
+elif player == 'O' and computer == '____':
+    print('Computer wins!')
+elif player == '____' and computer == 'O':
+    print('Player wins!')
+elif player == '____' and computer == '>8':
+    print('Computer wins!')
+elif player == '>8' and computer == '____':
+    print('Player wins!')
+elif player == '>8' and computer == 'O':
+    print('Computer wins!')
+else:
+    print("Invalid input! Please enter 'r', 'p', or 's'.")
