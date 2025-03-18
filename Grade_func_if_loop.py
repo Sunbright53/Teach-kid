@@ -5,8 +5,6 @@ def time_out():
         print(i)
         time.sleep(1)
 
-score = int(input("Please enter your test score:"))
-
 def score_grade():
     if score >= 80:
         print ("Your grade is A.")
@@ -25,9 +23,14 @@ def score_grade():
     else:
         print ("Your grade is F.")
    
+score = int(input("Please enter your test score:"))
 
-score_grade()
-print("You score equal is", str(score) + ".")
+if 0 <= score <= 100:
+    score_grade()
+    print("Your score is", str(score) + "." )
+else:
+    print("You entered an incorrect score.")
+
 print("End of program execution")
 time_out()
 print("END")
